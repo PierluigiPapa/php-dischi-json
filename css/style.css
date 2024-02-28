@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* // UTILITIES // */
+
 body {
     overflow: hidden;
 }
@@ -15,6 +17,8 @@ body {
 li {
     list-style-type:  none;
 }
+
+/* // UTILITIES // */
 
 /* // SECTION HEADER // */
 

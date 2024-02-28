@@ -11,19 +11,13 @@ const { createApp } = Vue;
     // Creo una chiamata alle API per leggere i dati e passarli chiamata all'array dischi
     methods: {
       getDischi() {
-        axios
-        .get('server.php')
-        .then(response => {
-          this.dischi = response.data;
+        axios.get('server.php').then(response => {
+            this.dischi = response.data;
         });
       },
       showDisco(index) {
-        axios
-        .get('server.php', {
-          params: { index }
-        })
-        .then(response => {
-          this.discoCorrente = response.data;
+        axios.get('server.php', {params: { index }}).then(response => {
+            this.discoCorrente = response.data;
         });
       }
     },
