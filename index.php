@@ -43,7 +43,7 @@
             <ul class="list-albums d-flex flex-wrap gap-2 text-center">
                 <li v-for="(disco, index) in dischi" class="album" @click="showDisco(index)">
                     <img :src="disco.poster" class="img-fluid">
-                    <h4 class="mt-2"> {{disco.title}}</h4>
+                    <h4 class="mt-2"> {{ disco.title }}</h4>
                     <h6> {{ disco.author }}</h6>
                     <h5> {{ disco.year }}</h5>
                 </li>
