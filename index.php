@@ -23,20 +23,35 @@
         </div>
     </head>
     <!-- // SECTION HEADER // -->
-    
-    <div id="app">
-        <ul class="list-albums d-flex flex-wrap gap-2 text-center">
-            <li class="album">
-                <img src="" alt="">
-                <h4>TITOLO CD</h4>
-                <h5>AUTORE CD</h5>
-                <h6>ANNO CD</h6>
-            </li>
-        </ul>
+
+    <!-- // SECTION PLAYLIST // -->
+    <div id="app" class="p-3">
+        <div v-if="discoCorrente">
+            <!-- // SECTION DISCO BONUS // -->
+            <div id="dettagli-disco" class="d-flex justify-center align-items-center flex-column margin">
+                <img :src="discoCorrente.poster" class="disco mb-4">
+                <h4>{{ discoCorrente.title }}</h4>
+                <h6>{{ discoCorrente.author}}</h6>
+                <h5>{{ discoCorrente.year}}</h5>
+            </div>
+            <!-- // SECTION DISCO BONUS // -->
+        </div>
+        
+        
+        <div v-else>
+            <!-- // SECTION LISTA DISCHI // -->
+            <ul class="list-albums d-flex flex-wrap gap-2 text-center">
+                <li v-for="(disco, index) in dischi" class="album" @click="showDisco(index)">
+                    <img :src="disco.poster" class="img-fluid">
+                    <h4 class="mt-2"> {{disco.title}}</h4>
+                    <h6> {{disco.author }}</h6>
+                    <h5> {{disco.year}}</h5>
+                </li>
+            </ul>
+            <!-- // SECTION LISTA DISCHI // -->
+        </div>
+        <!-- // SECTION PLAYLIST // -->
     </div>
-
-
-    
 
 <!-- LINK VUE.JS -->
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
