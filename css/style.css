@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.spotify-dark {
+    background-color: #1d2d3c;
+}
+
+
+/* // SECTION HEADER // */
+
 header {
     height: 75px;
     background-color: #06131F;
@@ -17,3 +24,5 @@ header i {
     color: #1DB954;
     font-size: 40px;
 }
+
+/* // SECTION HEADER // */
