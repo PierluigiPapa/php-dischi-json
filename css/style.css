@@ -8,6 +8,9 @@
     background-color: #1d2d3c;
 }
 
+li {
+    list-style-type:  none;
+}
 
 /* // SECTION HEADER // */
 
@@ -26,3 +29,12 @@ header i {
 }
 
 /* // SECTION HEADER // */
+
+.list-albums {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.album {
+    width: calc((100% - 20px) / 3);
+}

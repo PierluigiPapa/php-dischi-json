@@ -24,6 +24,18 @@
     </head>
     <!-- // SECTION HEADER // -->
     
+    <div id="app">
+        <ul class="list-albums d-flex flex-wrap gap-2 text-center">
+            <li class="album">
+                <img src="" alt="">
+                <h4>TITOLO CD</h4>
+                <h5>AUTORE CD</h5>
+                <h6>ANNO CD</h6>
+            </li>
+        </ul>
+    </div>
+
+
     
 
 <!-- LINK VUE.JS -->
