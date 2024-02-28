@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 75px;
+    background-color: #06131F;
+}
+
+header .container {
+    height: 100%;
+}
+
+header i {
+    color: #1DB954;
+    font-size: 40px;
+}
